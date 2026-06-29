@@ -1,3 +1,209 @@
 html {
-    background-color: rgba(2, 31, 45, 0.793);
+    background-color: #363d32;
+}
+
+/* Evita que o menu fixo cubra as seções ao clicar nos links */
+#inicio,
+#sobre-mim,
+#formacao,
+#portifolio,
+#contato {
+    scroll-margin-top: 60px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    background: #a7aca4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+nav a:hover{
+    background: #c7cfc3;
+    font-size: 25px;
+}
+
+#inicio{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background:  #444d3e;
+    color: white;
+    font-family: Arial; 
+    font-size: 16px;
+    align-items: center;
+    align-content: center;
+    padding: 5px 0px;
+}
+
+#sobre-mim {
+    display: flex;
+    padding: 10px 10px;
+}
+
+#sobre-mim img {
+    height: 210px;
+    width: 210px;
+}
+
+#sobre-mim h2 {
+    color: white;
+    font-family: Arial; 
+}
+
+#texto-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 210px;
+    color: white;
+    font-family: Arial; 
+    padding: 0px 5px;
+    margin: 0px 20px;
+    line-height: 1.8;
+}
+
+#formacao {
+    background:  #444d3e;
+    color: white;
+    font-family: Arial;
+    padding: 30px 20px;
+    line-height: 1.8;
+}
+
+#formacao h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Organiza as imagens do portfólio em formato de grade */
+#portifolio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 25px;
+    margin-top: 25px;
+}
+
+#portifolio img {
+    height: 400px;
+    width: 100%;
+}
+
+#portifolio h2 {
+    color: white;
+    font-family: Arial;
+    grid-column: 1/5;
+    justify-self: center;
+    padding: 20px 0px;
+}
+
+.item-portifolio {
+    width: 100%;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.item-portifolio figcaption,
+#item-ultima-imagem figcaption {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+#item-ultima-imagem {
+    width: 25%;
+    grid-column: 1/5;
+    justify-self: center;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+#ultima-imagem {
+    width: 100%;
+}
+
+ #portifolio figure>figcaption>a:visited {
+    color: white;
+    text-decoration: none;
+    background: white;
+ }
+
+#portifolio figure>figcaption>a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background: white;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #444d3e;
+    color: white;
+    font-family: Arial;
+    margin-top: 30px;
+    padding: 30px 20px;
+}
+
+#contato h2 {
+    margin-bottom: 15px;
+}
+
+#titulo {
+    text-align: center;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    max-width: 100%;
+}
+
+#form-contato input,
+#form-contato textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+#form-contato textarea {
+    height: 120px;
+}
+
+#form-contato button {
+    padding: 10px;
+    background: #a7aca4;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#form-contato button:hover {
+    background: #c7cfc3;
+}
+
+#resposta-formulario {
+    margin-top: 10px;
 }

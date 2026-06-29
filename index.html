@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,83 @@
     <title>Dev João Marcos</title>
 </head>
 <body>
-    <header>
+        <!-- Menu estático para a página -->
         <nav>
-            
+            <a href="#">INÍCIO</a>  
+            <a href="#sobre-mim">SOBRE MIM</a>
+            <a href="#formacao">FORMAÇÃO</a>
+            <a href="#portifolio">PORTIFÓLIO</a>
+            <a href="#contato">CONTATO</a>
         </nav>
-    </header>
+    <main>
+        <!-- Seção inicial do portfólio -->
+        <div id="inicio">
+            <h1> João Marcos Silva | Desenvolvedor de Software e Projetista de Elétrica</h1>
+        </div>
+        <!-- Seção sobre mim -->
+        <div id="sobre-mim">
+            <img src="src/assets/profile.jpeg" alt="João Marcos">
+            <div id="texto-sobre-mim">
+                <h2>Sobre mim</h2>   
+                <p>
+                    Sou <strong>Desenvolvedor e estudante de Engenharia de Software pela UNINTER</strong>. Comecei a programar aos 13 anos, criando sites com HTML, PHP, Bootstrap e WordPress. 
+                    <br>Também sou <strong>Técnico em Eletrônica e Projetista Elétrico</strong>, e ao longo da carreira tive a oportunidade de desenvolver e liderar equipes em projetos elétricos, de automação e de instrumentação, atuando em parceria com times nacionais e internacionais para grandes companhias como Ambev, Heineken, Fiat e Iveco, entre outras. 
+                    <br>Essas experiências contribuíram bastante para o desenvolvimento do meu pensamento crítico e da minha capacidade de tomada de decisões. 
+                    <br>Hoje, aplico todo esse aprendizado na criação de aplicações voltadas à solução de problemas diversos, sempre seguindo as melhores práticas de mercado, com agilidade e eficiência.
+                </p>
+            </div>
+        
+        </div>
+        <!-- Seção de formação acadêmica e profissional -->
+        <div id="formacao">
+            <h2>Formação</h2>
+            <p>
+                Sou Técnico em Eletrônica, formação que me deu uma base sólida em tecnologia, raciocínio lógico e solução de problemas. Também atuei como Professor de Inglês, experiência que fortaleceu minha comunicação, organização e capacidade de ensinar conteúdos de forma clara.Atualmente, sou graduando em Engenharia de Software, área em que aprofundo meus conhecimentos em desenvolvimento web, programação, estruturação de sistemas e boas práticas para criação de aplicações.
+            </p>
+        </div>
+        <!-- Seção de portfólio com imagens e legendas -->
+        <div id="portifolio">
+            <h2> Portifólio </h2>
+                <figure class="item-portifolio">
+                    <img src="src/assets/1.jpg" alt="Estudo luminotécnico 1">
+                    <figcaption>Projeto Elétrico Gerador: Vista normal</figcaption>
+                </figure>
+                <figure class="item-portifolio">
+                    <img src="src/assets/2.jpg" alt="Estudo luminotécnico 2">
+                    <figcaption>Projeto Elétrico Gerador: Vista com cálculo luminotécnico</figcaption>
+                </figure>
+                <figure class="item-portifolio">
+                    <img src="src/assets/3.jpg" alt="Estudo luminotécnico 3">
+                    <figcaption>Projeto Elétrico Abastecimento Diesel: Vista normal</figcaption>
+                </figure>
+                <figure class="item-portifolio">
+                    <img src="src/assets/4.jpg" alt="Estudo luminotécnico 4">
+                    <figcaption>Projeto Elétrico Abastecimento Diesel: Vista com cálculo luminotécnico</figcaption>
+                </figure>
+                <figure id="item-ultima-imagem">
+                    <img src="src/assets/5.png" alt="Projeto Precifique-se" id="ultima-imagem">
+                    <figcaption>Aplicação Web: Projeto <a href="https://precifique-se.vercel.app/" target="_blank">Precifique-se</a></figcaption>
+                </figure>
+        </div>
+        <!-- Seção de contato com formulário validado por JavaScript -->
+        <div id="contato">
+            <div id="titulo">
+                <h2>Contato</h2>
+            </div>
+            <div id="formulario">
+                <form id="form-contato">
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="email" id="email" placeholder="E-mail">
+                <textarea id="mensagem" placeholder="Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+                </form>
+                <p id="resposta-formulario"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="src/scripts/script.js"></script>
 </body>
 </html>
